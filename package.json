@@ -1,21 +1,28 @@
 {
-  "name": "react-interview-beginner",
-  "version": "0.1.0",
-  "private": true,
+  "name": "react-custom-radio-buttons-group",
+  "description": "Simple Radio-buttons group Component",
+  "author": "L7aj",
+  "keywords": ["react", "component", "ui","radio-buttons","custom"],
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "uuid": "^3.4.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +41,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8"
+  },
+  "repository": "l7aje/react-custom-radio-buttons-group",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }

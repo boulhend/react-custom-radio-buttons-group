@@ -1,4 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+#folders
+/public
+/src
 
 # dependencies
 /node_modules
@@ -17,6 +20,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.babel.config.json
+ 
 
 npm-debug.log*
 yarn-debug.log*
