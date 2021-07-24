@@ -2,8 +2,14 @@
   "name": "react-custom-radio-buttons-group",
   "description": "Simple Radio-buttons group Component",
   "author": "L7aj",
-  "keywords": ["react", "component", "ui","radio-buttons","custom"],
-  "version": "1.0.0",
+  "keywords": [
+    "react",
+    "component",
+    "ui",
+    "radio-buttons",
+    "custom"
+  ],
+  "version": "1.0.1",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "private": false,
