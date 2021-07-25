@@ -9,7 +9,7 @@
     "radio-buttons",
     "custom"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "private": false,
@@ -23,6 +23,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.0",
     "uuid": "^3.4.0",
     "web-vitals": "^1.0.1"
   },

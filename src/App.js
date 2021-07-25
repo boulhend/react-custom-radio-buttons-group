@@ -1,19 +1,6 @@
 import React from "react";
 import RadioButtonGroup from "./lib/components/RadioButtonGroup";
-
 function App() {
-  
-  const style = {
-    border: "2px",
-    borderStyle: "solid",
-    borderColor: "black",
-    color: "black",
-    padding: "5px",
-    display: "inline-block",
-    marginRight: "5px",
-    cursor: "pointer",
-  };
-  
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -27,20 +14,15 @@ function App() {
       <form onSubmit={handleSubmit}>
         <RadioButtonGroup
           onChange={handleChange}
-          hide={true}
+          hide={false}
           values={["apple","banana","strwabery"]}
-          radioButtonStyle={style}
-          activeButtonStyle={{backgroundColor:"blue",color:"white"}}
-          groupStyle={{margin:"20px"}}
         />
+        <br/>
         <RadioButtonGroup
           onChange={handleChange}
-          hide={true}
-          values={["mercedes","bmw","volkdwagen"]}
-          radioButtonStyle={style}
-          activeButtonStyle={{backgroundColor:"blue",color:"white"}}
+          hide={false}
+          values={["⚙️","🪔","💰"]}
         />
-        <button type="submit">Click</button>
       </form>
     </div>
   );

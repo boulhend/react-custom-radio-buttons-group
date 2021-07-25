@@ -11,6 +11,8 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _nameContext = _interopRequireDefault(require("../nameContext"));
 
+require("../style.css");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -21,10 +23,10 @@ function RadioButton(_ref) {
   let {
     children,
     value,
+    currentValue,
     onChange,
     defaultValue = value,
-    hide = false,
-    style
+    hide = false
   } = _ref;
   const name = (0, _react.useContext)(_nameContext.default);
   const InputRef = (0, _react.useRef)(null);
@@ -34,15 +36,17 @@ function RadioButton(_ref) {
     }
   }, [defaultValue]);
   return /*#__PURE__*/_react.default.createElement("label", {
-    style: style
+    className: "radio-button".concat(currentValue === value ? " active" : "")
   }, /*#__PURE__*/_react.default.createElement("input", {
     type: "radio",
     name: name,
     value: value,
     onChange: onChange,
     ref: InputRef,
-    style: hide ? {
+    style: {
       display: "none"
-    } : {}
-  }), /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, children));
+    }
+  }), !hide && /*#__PURE__*/_react.default.createElement("div", {
+    className: "dot".concat(currentValue === value ? " active" : "")
+  }), children);
 }

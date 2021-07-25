@@ -1,0 +1,54 @@
+.radio-button {
+  color: #999999;
+  border: 3px;
+  border-color: #999999;
+  border-style: solid;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  padding: 1rem 2rem;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family:sans-serif;
+  transition: all 0.3s ease;
+}
+.radio-button.active {
+  background-color: #0069d9;
+  color:#ffff;
+  border-color:#0069d9;
+}
+.radio-overlay {
+  margin: 1rem;
+}
+.dot{
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.dot::before{
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+
+.dot.active{
+  background: #fff;
+}
+.dot.active::before{
+  opacity: 1;
+  transform: scale(1);
+}
