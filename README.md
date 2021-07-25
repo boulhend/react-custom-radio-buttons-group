@@ -45,7 +45,7 @@ export default () => (
 
 ### Values
 
-- ** Values can be an array of text:
+- Values can be an array of text:
 ```jsx
   <RadioButtonGroup
     onChange={handleChange}
@@ -53,7 +53,7 @@ export default () => (
     values={["Apple","Banana","Orange"]}
     />
 ```
-- ** Or a react component
+- Or a react component
 ```jsx
   <RadioButtonGroup
     onChange={handleChange}

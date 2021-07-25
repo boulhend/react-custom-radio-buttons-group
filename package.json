@@ -5,11 +5,12 @@
   "keywords": [
     "react",
     "component",
-    "ui",
     "radio-buttons",
-    "custom"
+    "custom",
+    "react radio buttons",
+    "react-radio-buttons"
   ],
-  "version": "1.0.2",
+  "version": "1.0.5",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "private": false,
